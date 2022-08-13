@@ -21,26 +21,29 @@ function addBlog(event) {
     } else {
         node = ""
     }
-    
+
+     console.log(node);
+
     if(react){
         react = document.getElementById("inputReact").value
     } else {
         react = ""
     }
+            console.log(react);
 
     if(golang){
         golang = document.getElementById("inputGo").value
     } else {
         golang = ""
     }
+            console.log(golang);
 
     if(angular){
         angular = document.getElementById("inputAngular").value
     } else {
         angular = ""
-    }
-   
-        console.log(node)
+    } 
+        console.log(angular)
 
 
     // method URL.createObjectURL
@@ -75,27 +78,28 @@ function renderBlog() {
     for (let index = 0; index < dataBlog.length; index++) {
         document.getElementById("blog").innerHTML += `
         <div class="cardProject">
-                <img class="imgPost" src="${dataBlog[index].image}" alt="">
-                    <a href="">${dataBlog[index].title}</a>
-                    <p>Durasi: 3 bulan</p>
-                <div>
-                    <p>${dataBlog[index].description}</p>
-                </div>
+        <img class="imgPost" src="${dataBlog[index].image}" alt="">
+        <a class="projectTitle" href="/project-detail.html">${dataBlog[index].title}</a>
+        
+        <p class="duration">Durasi: 3 bulan</p>
+        <div>
+            <p class="contentProject">${dataBlog[index].description}</p>
+        </div>
 
-            <div>
-                <div class="iconProject">
-                   <i class="fa-brands  ${dataBlog[index].node}"></i> 
-                   <i class="fa-brands  ${dataBlog[index].react}"></i> 
-                   <i class="fa-brands  ${dataBlog[index].golang}"></i>
-                   <i class="fa-brands  ${dataBlog[index].angular}"></i>
-                </div>
+        <div>
+            <div class="iconProject">
+                <i class="fa-brands ${dataBlog[index].node}"></i> 
+                <i class="fa-brands ${dataBlog[index].react}"></i> 
+                <i class="fa-brands ${dataBlog[index].golang}"></i>
+                <i class="fa-brands ${dataBlog[index].angular}"></i>
             </div>
+        </div>
 
-            <div class="btn-project">
-                <button class="btnProject">edit</button>
-                <button class="btnProject">delete</button>
-            </div>
-        </div>`
+        <div class="btn-project">
+            <button class="btnProject">edit</button>
+            <button class="btnProject">delete</button>
+        </div>
+    </div>`
 
     }
 }

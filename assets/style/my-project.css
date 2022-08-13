@@ -165,20 +165,26 @@ h2{
     margin:25px;
     box-shadow: 0px 3px 9px grey;
     border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+
 }
 .projectTitle{
     text-decoration: none;
     color: black;
     font-size: 20px;
     font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
 }
 
 .duration{
     margin-top: -1px;
     color: grey;
     font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contentProject{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
 }
 
 .imgPost{
@@ -194,6 +200,10 @@ h2{
 
 .btnProject{
     width: 45%;
+    background-color: black;
+    color: white;
+    padding: 8px 0px;
+    border-radius: 15px;
 }
 
 

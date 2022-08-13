@@ -148,7 +148,9 @@ h2{
 .cardPost{
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
     padding-bottom: 25px;
 

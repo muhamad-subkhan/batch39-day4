@@ -83,10 +83,10 @@ function renderBlog() {
 
             <div>
                 <div class="iconProject">
-                   <i class="fa-brands ${dataBlog[index].node}"></i> 
+                   <i class="fa-brands  ${dataBlog[index].node}"></i> 
                    <i class="fa-brands  ${dataBlog[index].react}"></i> 
                    <i class="fa-brands  ${dataBlog[index].golang}"></i>
-                    <i class="fa-brands  ${dataBlog[index].angular}"></i>
+                   <i class="fa-brands  ${dataBlog[index].angular}"></i>
                 </div>
             </div>
 

@@ -68,10 +68,11 @@ function addBlog(event) {
 
 function renderBlog() {
 
-    // console.log(dataBlog)
+    console.log(dataBlog)
+
     document.getElementById("blog").innerHTML = ""
 
-    for (let index = 0; index < addBlog.length; index++) {
+    for (let index = 0; index < dataBlog.length; index++) {
         document.getElementById("blog").innerHTML += `
         <div class="cardProject">
                 <img class="imgPost" src="${dataBlog[index].image}" alt="">
@@ -96,6 +97,5 @@ function renderBlog() {
             </div>
         </div>`
 
-        console.log(dataBlog[index]);
     }
 }
